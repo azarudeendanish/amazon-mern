@@ -41,7 +41,7 @@ export const sampleProducts:Product [] = [
         name: 'dress 4',
         slug: 'dress-4',
         category: 'dress',
-        image: '../images/dress4.jpg',
+        image: '../images/dress2.jpg',
         price: 120,
         countInStock: 10,
         brand: 'Goat',

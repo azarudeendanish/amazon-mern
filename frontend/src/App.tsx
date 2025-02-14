@@ -1,24 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import './index.css'
+import Footer from './components/Footer'
+import Header from './components/Header'
 import { sampleProducts } from './data'
+import { Col, Container, Row } from 'react-bootstrap'
+
 
 function App() {
 
   return (
     <>
-      <header>Azar Amazon</header>
-      <main>
-        <ul>
-          {sampleProducts.map((product, index)=>
-            <li key={index}>
-              <img src={product.image} alt={product.name} className='product-image' />
-              <h2>{product.name}</h2>
-              <p>$ {product.price}</p>
-            </li>
-          )}
-        </ul>
-      </main>
-      <footer>Footer section</footer>
+      <Header />
+      
+      <Footer />
     </>
   )
 }
